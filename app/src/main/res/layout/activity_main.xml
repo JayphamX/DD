@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Guideline ngang chia hàng -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideH1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.28" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideH2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.53" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideH3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.66" />
+
+    <!-- Guideline dọc chia cột -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.333" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideV3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.666" />
+
+    <!-- Ô 1 -->
+    <TextView
+        android:id="@+id/box1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/box_blue"
+        android:gravity="center"
+        android:text="@string/box_1"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/guideH1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideV1" />
+
+    <!-- Ô 2 -->
+    <TextView
+        android:id="@+id/box2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/box_red"
+        android:gravity="center"
+        android:text="@string/box_2"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/guideH1"
+        app:layout_constraintStart_toEndOf="@id/guideV1"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Ô 3 -->
+    <TextView
+        android:id="@+id/box3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/box_yellow"
+        android:gravity="center"
+        android:text="@string/box_3"
+        android:textColor="@android:color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/guideH1"
+        app:layout_constraintBottom_toTopOf="@id/guideH2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideV2" />
+
+    <!-- Ô 4 -->
+    <TextView
+        android:id="@+id/box4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/box_green"
+        android:gravity="center"
+        android:text="@string/box_4"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/guideH1"
+        app:layout_constraintBottom_toTopOf="@id/guideH2"
+        app:layout_constraintStart_toEndOf="@id/guideV2"
+        app:layout_constraintEnd_toStartOf="@id/guideV3" />
+
+    <!-- Ô 5 -->
+    <TextView
+        android:id="@+id/box5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/box_purple"
+        android:gravity="center"
+        android:text="@string/box_5"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/guideH1"
+        app:layout_constraintBottom_toTopOf="@id/guideH2"
+        app:layout_constraintStart_toEndOf="@id/guideV3"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Ô 6: full chiều ngang -->
+    <TextView
+        android:id="@+id/box6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FF5722"
+        android:gravity="center"
+        android:text="@string/box_6"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/guideH2"
+        app:layout_constraintBottom_toTopOf="@id/guideH3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Dòng Họ và tên - MSSV -->
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:text="@string/student_info"
+        android:textColor="#424242"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

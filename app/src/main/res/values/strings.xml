@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GridLayoutApp</string>
+    <string name="box_1">1</string>
+    <string name="box_2">2</string>
+    <string name="box_3">3</string>
+    <string name="box_4">4</string>
+    <string name="box_5">5</string>
+    <string name="box_6">6</string>
+    <string name="student_info">Phạm Ngọc Thành - BIT240216</string>
+</resources>

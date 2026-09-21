@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="box_blue">#1E88F5</color>
+    <color name="box_red">#F44336</color>
+    <color name="box_yellow">#FDD835</color>
+    <color name="box_green">#2E9E5B</color>
+    <color name="box_purple">#7E4FC9</color>
+    <color name="box_orange">#FF5722</color>  <!-- cam đậm hơn, giữ chữ trắng đủ tương phản -->
+</resources>
